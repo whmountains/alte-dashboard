@@ -1,5 +1,19 @@
-exports.getPressure = function() {
-  return getRandomInt(25, 125)
+exports.readSensors = function() {
+
+  try {
+    var b = require('octalbonescript')
+  } catch {} // we'll manually check for errors
+
+  if (b) {
+    return {
+      pressure: getRandomInt(25, 125)
+    }
+  }
+  else { // octalbonescript is not installed
+    return {
+      pressure: getRandomInt(25, 125)
+    }
+  }
 }
 
 // Returns a random integer between min (included) and max (excluded)

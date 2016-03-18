@@ -20,6 +20,5 @@ server.listen(listenPort)
 log(`listening on *:${listenPort}`)
 
 function readSensors() {
-  var pressure = inputs.getPressure()
-  io.emit('readings', {pressure})
+  io.emit('readings', inputs.readSensors())
 }
