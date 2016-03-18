@@ -14,13 +14,13 @@ html, button, input, select, textarea,
   position: fixed;
   width: 100%;
   top: 0;
-  height: 60px;
+  height: 69px;
   background-color: #424242;
   color: white;
   display: flex;
   align-items: center;
   font-weight: 300;
-  border-bottom: solid 5px #1976d2;
+  border-bottom: solid 7px #1976d2;
   justify-content: flex-end;
   padding-right: 30px;
   box-sizing: border-box;
@@ -28,13 +28,13 @@ html, button, input, select, textarea,
 }
 
 .titlebar__brandtxt {
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 300;
-  padding-right: 45;
+  padding-right: 130;
 }
 
 .appc {
-  padding-top: 60px;
+  padding-top: 69px;
 }
 
 
@@ -55,7 +55,7 @@ html, button, input, select, textarea,
 
 .dials__titlebar h3 {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 31px;
   margin: 10px;
   color: 60839f;
   padding-left: 40;
@@ -90,7 +90,7 @@ html, button, input, select, textarea,
 }
 
 .dialbx__label {
-    font-size: 21px;
+    font-size: 32px;
     font-weight: 100;
     color: 60839f;
     margin: 12px 0;
