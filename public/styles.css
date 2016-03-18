@@ -65,7 +65,7 @@ html, button, input, select, textarea,
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 50px 34px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -93,7 +93,7 @@ html, button, input, select, textarea,
     font-size: 32px;
     font-weight: 100;
     color: 60839f;
-    margin: 12px 0;
+    margin: 5px 0;
 }
 
 .dialbx__dial {
@@ -104,5 +104,5 @@ html, button, input, select, textarea,
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 2px solid #60839F;
+    border-bottom: 2px solid rgba(96,131,159,0.5);
 }
