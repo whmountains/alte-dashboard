@@ -8,17 +8,22 @@ var Dials = React.createClass({
     return (
     <div className="dials">
 
-      <div className="dials__titlebar"><h3>Current Stats</h3></div>
+      <div className="dials__titlebar"><img src="icons/dial-icon.svg"/><h3>Current Stats</h3></div>
 
         <div className="pure-g">
-          <div className="pure-u-1-3"><DialBox label="Total Output"/></div>
-          <div className="pure-u-1-3"><DialBox label="Battery Voltage"/></div>
+          <div className="pure-u-1-3">
+            <DialBox label="Total Output" icon="icons/turbine-icon.svg"/>
+          </div>
+          <div className="pure-u-1-3">
+            <DialBox label="Battery Voltage" icon="icons/battery-icon.svg"/>
+          </div>
           <div className="pure-u-1-3">
             <DialBox
               label="Water Pressure"
               value={`${this.props.readings.pressure}psi`}
               min={0}
               max={150}
+              icon="icons/gauge-icon.svg"
             />
           </div>
         </div>

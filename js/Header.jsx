@@ -4,7 +4,7 @@ var Header = React.createClass({
   render: function() {
     return (
       <nav className="titlebar">
-        <a className="titlebar__brandtxt">Power Dashboard</a>
+        <a className="titlebar__brandtxt">Power Dashboard</a><img src="icons/power-icon.svg"/>
       </nav>
     )
   }

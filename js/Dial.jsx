@@ -14,7 +14,8 @@ var AppDial = React.createClass({
           readOnly={true}
           min={this.props.min}
           max={this.props.max}
-          fontSize="50px"
+          fontSize="40px"
+          thickness={1.7}
         />
       </div>
     )

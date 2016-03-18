@@ -58,7 +58,8 @@ var AppDial = React.createClass({
         readOnly: true,
         min: this.props.min,
         max: this.props.max,
-        fontSize: '50px'
+        fontSize: '40px',
+        thickness: 1.7
       })
     );
   }
@@ -78,6 +79,11 @@ var DialBox = React.createClass({
 
   render: function render() {
 
+    var icon;
+    if (this.props.icon) {
+      icon = React.createElement('img', { className: 'dialbx__icon', src: this.props.icon });
+    }
+
     return React.createElement(
       'div',
       { className: 'dialbx' },
@@ -88,7 +94,8 @@ var DialBox = React.createClass({
           'h5',
           { className: 'dialbx__label' },
           this.props.label
-        )
+        ),
+        icon
       ),
       React.createElement(Dial, {
         value: this.props.value,
@@ -120,6 +127,7 @@ var Dials = React.createClass({
       React.createElement(
         'div',
         { className: 'dials__titlebar' },
+        React.createElement('img', { src: 'icons/dial-icon.svg' }),
         React.createElement(
           'h3',
           null,
@@ -132,12 +140,12 @@ var Dials = React.createClass({
         React.createElement(
           'div',
           { className: 'pure-u-1-3' },
-          React.createElement(DialBox, { label: 'Total Output' })
+          React.createElement(DialBox, { label: 'Total Output', icon: 'icons/turbine-icon.svg' })
         ),
         React.createElement(
           'div',
           { className: 'pure-u-1-3' },
-          React.createElement(DialBox, { label: 'Battery Voltage' })
+          React.createElement(DialBox, { label: 'Battery Voltage', icon: 'icons/battery-icon.svg' })
         ),
         React.createElement(
           'div',
@@ -146,7 +154,8 @@ var Dials = React.createClass({
             label: 'Water Pressure',
             value: this.props.readings.pressure + 'psi',
             min: 0,
-            max: 150
+            max: 150,
+            icon: 'icons/gauge-icon.svg'
           })
         )
       )
@@ -172,7 +181,8 @@ var Header = React.createClass({
         "a",
         { className: "titlebar__brandtxt" },
         "Power Dashboard"
-      )
+      ),
+      React.createElement("img", { src: "icons/power-icon.svg" })
     );
   }
 });
