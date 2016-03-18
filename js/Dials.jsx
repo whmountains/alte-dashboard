@@ -11,9 +11,16 @@ var Dials = React.createClass({
       <div className="dials__titlebar"><h3>Current Stats</h3></div>
 
         <div className="pure-g">
-          <div className="pure-u-1-3"><DialBox label="Water Pressure"/></div>
-          <div className="pure-u-1-3"><DialBox label="Turbine Output"/></div>
+          <div className="pure-u-1-3"><DialBox label="Total Output"/></div>
           <div className="pure-u-1-3"><DialBox label="Battery Voltage"/></div>
+          <div className="pure-u-1-3">
+            <DialBox
+              label="Water Pressure"
+              value={`${this.props.readings.pressure}psi`}
+              min={0}
+              max={150}
+            />
+          </div>
         </div>
 
 
