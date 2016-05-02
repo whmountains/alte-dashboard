@@ -20,6 +20,7 @@ var DialBox = React.createClass({
           value={this.props.value}
           min={this.props.min}
           max={this.props.max}
+          unit={this.props.unit}
         />
         <div className="dialbx__colorbar"></div>
       </div>

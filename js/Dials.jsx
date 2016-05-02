@@ -20,7 +20,8 @@ var Dials = React.createClass({
           <div className="pure-u-1-3">
             <DialBox
               label="Water Pressure"
-              value={`${this.props.readings.pressure}psi`}
+              value={this.props.readings.pressure}
+              unit={'psi'}
               min={0}
               max={150}
               icon="icons/gauge-icon.svg"

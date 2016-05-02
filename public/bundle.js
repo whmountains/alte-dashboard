@@ -100,7 +100,8 @@ var DialBox = React.createClass({
       React.createElement(Dial, {
         value: this.props.value,
         min: this.props.min,
-        max: this.props.max
+        max: this.props.max,
+        unit: this.props.unit
       }),
       React.createElement('div', { className: 'dialbx__colorbar' })
     );
@@ -152,7 +153,8 @@ var Dials = React.createClass({
           { className: 'pure-u-1-3' },
           React.createElement(DialBox, {
             label: 'Water Pressure',
-            value: this.props.readings.pressure + 'psi',
+            value: this.props.readings.pressure,
+            unit: 'psi',
             min: 0,
             max: 150,
             icon: 'icons/gauge-icon.svg'

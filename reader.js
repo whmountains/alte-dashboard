@@ -2,7 +2,8 @@ exports.readSensors = function() {
 
   try {
     var b = require('octalbonescript')
-  } catch {} // we'll manually check for errors
+  }
+  catch (e) {} // we'll manually check for errors
 
   if (b) {
     return {
