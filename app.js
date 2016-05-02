@@ -15,7 +15,7 @@ app.use(express.static('public'))
 
 setInterval(readSensors, 1000)
 
-var listenPort = 3000
+var listenPort = 5000
 server.listen(listenPort)
 log(`listening on *:${listenPort}`)
 
